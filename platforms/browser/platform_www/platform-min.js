@@ -1,0 +1,1 @@
+module.exports={id:"browser",cordovaVersion:"3.4.0",bootstrap:function(){var e=require("cordova/modulemapper"),o=require("cordova/channel");e.clobbers("cordova/exec/proxy","cordova.commandProxy"),o.onNativeReady.fire(),document.addEventListener("webkitvisibilitychange",function(){document.webkitHidden?o.onPause.fire():o.onResume.fire()},!1)}};

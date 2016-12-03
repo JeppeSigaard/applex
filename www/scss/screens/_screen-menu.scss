@@ -1,0 +1,27 @@
+.screen-menu{
+    display: flex;
+    flex-direction: column;
+    
+    .menu{
+        flex-grow: 0;
+    }
+    
+    .menu-item{
+        border-bottom: 1px solid white;
+        height:60px;
+        line-height: 60px;
+        padding: 0px 10px;
+        clear: both;
+        position: relative;
+    }
+    
+    svg{
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        height: 30px;
+        width: 30px;
+        fill: white;
+    }
+    
+}

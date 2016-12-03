@@ -1,0 +1,1 @@
+var Q=require("q"),proc=require("child_process");module.exports=function(r,e,o){var c=Q.defer();try{var t=proc.spawn(r,e,{cwd:o,stdio:"inherit"});t.on("exit",function(o){o?c.reject("Error code "+o+" for command: "+r+" with args: "+e):c.resolve()})}catch(r){c.reject(r)}return c.promise};

@@ -1,0 +1,2 @@
+#!/usr/bin/env node
+var fs=require("fs"),shjs=require("shelljs"),path=require("path"),check_reqs=require("./check_reqs"),platformBuildDir=path.join("platforms","browser","build");exports.cleanProject=function(){check_reqs.run()||(console.error("Please make sure you meet the software requirements in order to clean an browser cordova project"),process.exit(2)),console.log("Cleaning Browser project");try{fs.existsSync(platformBuildDir)&&shjs.rm("-r",platformBuildDir)}catch(e){console.log("could not remove "+platformBuildDir+" : "+e.message)}};

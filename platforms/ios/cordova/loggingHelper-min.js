@@ -1,0 +1,1 @@
+var CordovaLogger=require("cordova-common").CordovaLogger;module.exports={adjustLoggerLevel:function(e){e.verbose||Array.isArray(e)&&e.indexOf("--verbose")!==-1?CordovaLogger.get().setLevel("verbose"):(e.silent||Array.isArray(e)&&e.indexOf("--silent")!==-1)&&CordovaLogger.get().setLevel("error")}};

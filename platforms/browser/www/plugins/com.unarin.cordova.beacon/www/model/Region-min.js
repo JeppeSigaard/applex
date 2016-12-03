@@ -1,0 +1,1 @@
+cordova.define("com.unarin.cordova.beacon.Region",function(n,i,r){function e(n){e.checkIdentifier(n),this.identifier=n}var o=n("com.unarin.cordova.beacon.underscorejs");e.checkIdentifier=function(n){if(!o.isString(n))throw new TypeError(n+" is not a String.");if(o.isEmpty(n))throw new Error("'identifier' cannot be an empty string.")},r.exports=e});
